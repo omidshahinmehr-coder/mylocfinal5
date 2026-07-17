@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تنظیمات و ارسال فرامین"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="شماره‌ی گوشیِ ردیاب (Tracker):" />
+
+        <EditText
+            android:id="@+id/trackerPhoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="مثلا 09121234567" />
+
+        <Button
+            android:id="@+id/saveTrackerPhoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ذخیره و درخواست مجوزها" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/sendlocButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="دریافت موقعیت الان (sendloc)" />
+
+        <Button
+            android:id="@+id/pingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="بررسی زنده‌بودن ردیاب (ping)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="بازه ارسال خودکار (دقیقه):" />
+
+        <EditText
+            android:id="@+id/autosendIntervalInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="مثلا 30" />
+
+        <Button
+            android:id="@+id/autosendOnButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="فعال‌سازی ارسال خودکار (autosend on)" />
+
+        <Button
+            android:id="@+id/autosendOffButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="غیرفعال‌سازی ارسال خودکار (autosend off)" />
+
+        <Button
+            android:id="@+id/sendlogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ارسال فایل لاگ به ایمیل (sendlog)" />
+
+        <Button
+            android:id="@+id/dellogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="حذف آرشیو لاگ (dellog)" />
+
+        <Button
+            android:id="@+id/clearHistoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="پاک کردن تاریخچه نمایش‌داده‌شده" />
+
+        <Button
+            android:id="@+id/showMapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="نمایش مسیر روی نقشه" />
+
+    </LinearLayout>
+</ScrollView>
